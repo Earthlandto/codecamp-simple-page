@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Adventure time</title>
+    <style>
+      body {
+        background-color: rgb(201, 113, 80);
+      }
+      h1 {
+        width: 100%;
+        margin-top: 3rem;
+        color: white;
+      }
+      div {
+        color: yellow;
+        font-size: 1.5rem;
+      }
+    </style>
+    <!--include-->
+    <script type="text/javascript">
+      function startTime() {
+        var now = new Date();
+        document.getElementById('time').innerHTML = now;
+
+        setTimeout('startTime()', 500);
+      }
+    </script>
+  </head>
+  <body onload="startTime()">
+
+    <h1>JS, piedad; tengo mujer e hijos :/</h1>
+    <div id="time"></div>
+
+  </body>
+</html>
